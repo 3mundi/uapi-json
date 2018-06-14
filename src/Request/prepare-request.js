@@ -6,5 +6,6 @@ module.exports = function prepareRequest(template, auth, params) {
     ? auth.emulatePcc.toUpperCase()
     : false;
   const renderedObj = template(params);
+  console.log(renderedObj);
   return renderedObj;
 };

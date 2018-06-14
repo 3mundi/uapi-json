@@ -20,10 +20,10 @@ module.exports = `
             {{#legs}}
             <air:SearchAirLeg>
                 <air:SearchOrigin>
-                    <com:CityOrAirport Code="{{from}}" PreferCity="true"/>
+                    <com:Airport Code="{{from}}"/>
                 </air:SearchOrigin>
                 <air:SearchDestination>
-                    <com:CityOrAirport Code="{{to}}" PreferCity="true"/>
+                    <com:Airport Code="{{to}}"/>
                 </air:SearchDestination>
                 <air:SearchDepTime PreferredTime="{{departureDate}}"/>
                 <air:AirLegModifiers>
